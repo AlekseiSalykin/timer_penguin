@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">penguin</string>
+    <string name="cost1">0</string>
+    <string name="cost2">100</string>
+    <string name="cost3">300</string>
+    <string name="cost4">500</string>
+</resources>

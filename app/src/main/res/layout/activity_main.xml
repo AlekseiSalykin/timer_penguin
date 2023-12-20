@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:id="@+id/upper_panel"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_alignParentTop="true"
+        android:gravity="right"
+        android:background="@color/panel">
+        <TextView
+            android:id="@+id/money_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text=""
+            android:textColor="@color/text_btns"/>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_toRightOf="@+id/money_id"
+            android:layout_marginRight="10dp"
+            app:srcCompat="@drawable/coin_chinese_svgrepo_com" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/middle_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/upper_panel">
+
+        <TextView
+            android:id="@+id/textClock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:textColor="@color/col1"
+            android:typeface="monospace"
+            android:text="00:00"
+            android:textSize="25sp"
+            />
+
+        <EditText
+            android:id="@+id/timeEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textClock"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:textAlignment="center"
+            android:hint="Введите время (в минутах)"
+            android:inputType="number"
+            android:minHeight="48dp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_below="@+id/timeEditText"
+            android:layout_marginTop="80dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginLeft="100dp"
+            android:src="@drawable/penguin_svgrepo_com1" />
+
+        <Button
+            android:id="@+id/startButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView2"
+            android:layout_marginTop="20dp"
+            android:layout_centerInParent="true"
+            android:backgroundTint="@color/text_btns"
+            android:text="Старт" />
+
+        <Button
+            android:id="@+id/stopButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/startButton"
+            android:layout_marginTop="20dp"
+            android:layout_centerInParent="true"
+            android:backgroundTint="@color/text_btns"
+            android:text="Стоп" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:background="@color/panel">
+
+        <Button
+            android:id="@+id/shop_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/text_btns"
+            android:text="Магазин"/>
+    </LinearLayout>
+</RelativeLayout>

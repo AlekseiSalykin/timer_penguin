@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:id="@+id/upper_panel"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_alignParentTop="true"
+        android:gravity="right"
+        android:background="@color/panel">
+        <TextView
+            android:id="@+id/money_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text=""
+            android:textColor="@color/text_btns"/>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_toRightOf="@+id/money_id"
+            android:layout_marginRight="10dp"
+            app:srcCompat="@drawable/coin_chinese_svgrepo_com" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/middle_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/upper_panel"
+        android:layout_marginTop="10dp"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/image_penguin1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:backgroundTint="@color/background"
+            android:layout_weight="1"
+            android:contentDescription="@string/app_name"
+            app:srcCompat="@drawable/penguin_svgrepo_com1" />
+
+        <TextView
+            android:id="@+id/cost1"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="@string/cost1"
+            android:textColor="@color/text_btns"/>
+
+        <Button
+            android:id="@+id/buy_button1"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:backgroundTint="@color/col1"
+            android:enabled="false"
+            android:text="Бесплатно" />
+
+        <ImageButton
+            android:id="@+id/image_penguin2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/background"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/penguin_svgrepo_com__1_" />
+
+        <TextView
+            android:id="@+id/cost2"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="@string/cost2"
+            android:textColor="@color/text_btns"/>
+
+        <Button
+            android:id="@+id/buy_button2"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:backgroundTint="@color/text_btns"
+            android:text="Купить" />
+
+        <ImageButton
+            android:id="@+id/image_penguin3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/background"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/penguin_svgrepo_com__2_" />
+
+        <TextView
+            android:id="@+id/cost3"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="@string/cost3"
+            android:textColor="@color/text_btns"/>
+
+        <Button
+            android:id="@+id/buy_button3"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:backgroundTint="@color/text_btns"
+            android:text="Купить" />
+
+        <ImageButton
+            android:id="@+id/image_penguin4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/background"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/penguin_svgrepo_com__3_" />
+
+        <TextView
+            android:id="@+id/cost4"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="@string/cost4"
+            android:textColor="@color/text_btns"/>
+
+        <Button
+            android:id="@+id/buy_button4"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:backgroundTint="@color/text_btns"
+            android:text="Купить" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:background="@color/panel">
+        <Button
+            android:id="@+id/main_button_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/text_btns"
+            android:text="Главная"/>
+
+    </LinearLayout>
+</RelativeLayout>
